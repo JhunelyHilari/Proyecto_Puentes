@@ -2,30 +2,33 @@
  <!DOCTYPE html>
 <html>
 <head>
-  <!--<title>Sistema MTC</title>-->
-  <title><%= full_title(yield(:title)) %></title>
+  <title>Sistema MTC</title>
+  <!--<title><%= full_title(yield(:title)) %></title>-->
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
    <%= render 'layouts/shim' %>
 </head>
-<body>
+<body background-image: url("/home/jhunely/Escritorio/Proyectos_RoR/Sistema_MTC/app/assets/images/1.jpg");>
 <%= render 'layouts/header' %>
-<!--<%= full_title(yield) %>-->
 <header class="navbar navbar-fixed-top navbar-inverse">
       <div class="container">
-        <%= link_to "Sistema MTC", '#', id: "logo" %>
+        <%= link_to "Sistema MTC", root_path, id: "logo" %>
         <nav>
           <ul class="nav navbar-nav navbar-right">
-            <li><%= link_to "Home",   '#' %></li>
-            <li><%= link_to "Help",   '#' %></li>
-            <li><%= link_to "Log in", '#' %></li>
+            <li><%= link_to "Home",   root_path %></li>
+            <li><%= link_to "Help",   "#" %></li>
+            <li><%= link_to "Log in", login_path %></li>
           </ul>
         </nav>
       </div>
-    </header>
+</header>
+	
     <div class="container">
-    
+      <% flash.each do |message_type, message| %>
+        <div class="alert alert-<%= message_type %>"><%= message %>
+        </div>
+      <% end %>
     </div>
     <div class="container">
      <%= yield %> 

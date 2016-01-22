@@ -4,7 +4,7 @@
 
 /* mixins, variables, etc. */
 
-$gray-medium-light: #005555;
+$gray-medium-light: #1D2B7A;
 
 @mixin box_sizing {
   -moz-box-sizing:    border-box;
@@ -26,7 +26,9 @@ $gray-medium-light: #005555;
 /* universal */
 
 body {
+  background-image: url("/home/jhunely/Escritorio/Proyectos_RoR/Sistema_MTC/app/assets/images/1.jpg");
   padding-top: 60px;
+
 }
 
 section {
@@ -84,6 +86,7 @@ p {
   letter-spacing: -1px;
   padding-top: 9px;
   font-weight: bold;
+
   &:hover {
     color: white;
     text-decoration: none;
@@ -170,5 +173,13 @@ input, textarea, select, .uneditable-input {
 
 input {
   height: auto !important;
+}
+
+.img {
+	align: center;
+    border: 1px solid #bbb;
+    height: 100px;
+    width: 560px;
+    
 }
 

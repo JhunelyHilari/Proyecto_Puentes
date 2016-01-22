@@ -3,7 +3,11 @@
 one:
   Nombre: MyString
   Correo: MyString
+  Contraseña: MyString
+  Confirmar_contraseña: MyString
 
 two:
   Nombre: MyString
   Correo: MyString
+  Contraseña: MyString
+  Confirmar_contraseña: MyString

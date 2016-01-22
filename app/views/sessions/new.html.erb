@@ -9,12 +9,14 @@
       <%= f.label :Correo%>
       <%= f.email_field :email, class: 'form-control' %>
 
-      <%= f.label :Usuario %>
+      <%= f.label :Contraseña %>
       <%= f.password_field :password, class: 'form-control' %>
 
       <%= f.submit "Ingresar", class: "btn btn-primary" %>
+      
     <% end %>
 
-    <p>¿Es nuevo aquí? <%= link_to "Inscríbete ahora!", signup_path %></p>
+    <p>¿Eres nuevo aquí? <%= link_to "Inscríbete ahora!", signup_path %></p>
   </div>
 </div>
+
